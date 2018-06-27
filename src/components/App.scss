@@ -1,0 +1,68 @@
+body {
+  background-color: #273238;
+  position: relative;
+  height: 100vh;
+
+  .drum-machine-wrapper {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .title {
+      font-size: 32px;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    #drum-machine {
+      background-color: #fff;
+      display: inline-block;
+      padding: 20px;
+      border-radius: 5px;
+      color: #4B00B2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .drum-keys {
+        position: relative;
+        padding-right: 20px;
+        width: 400px;
+
+        &::after {
+          content: "";
+          width: 2px;
+          background: lightgrey;
+          position: absolute;
+          top: 10px;
+          right: 0;
+          bottom: 15px;
+        }
+      }
+
+      .display-power{
+        padding: 0 30px;
+        display: flex;
+        align-items: center;
+
+        #display{
+          background-color: #666;
+          padding: 12px;
+          font-size: 20px;
+          width: 150px;
+          text-align: center;
+          border-radius: 5px;
+          color: white;
+          margin-right: 15px;
+          height: 25px;
+        }
+      }
+
+    }
+
+  }
+}
+
